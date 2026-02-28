@@ -1,10 +1,10 @@
-import ThemeToggler from '@/components/Helper/ThemeToggler';
+import Navbar from '@/components/Navbar/Navbar';
 import React from 'react';
 
 const Home = () => {
   return (
-    <div>
-      <ThemeToggler/>
+    <div className='overflow-hidden h-210'>
+      <Navbar/>
     </div>
   );
 };
