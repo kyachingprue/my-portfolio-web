@@ -1,9 +1,41 @@
 import React from 'react';
+import { NavLinks } from '../../../Constant/Constant';
+import Link from 'next/link';
+import { X } from 'lucide-react';
 
-const MobileNav = () => {
+type Props = {
+  showNav: boolean;
+  closeNav: () => void;
+};
+
+const MobileNav = ({ closeNav, showNav }: Props) => {
+  const sidebarOpenClose = showNav ? 'translate-x-0' : 'translate-x-[-100%]';
   return (
     <div>
-      
+      {/* Overlay */}
+      <div
+        className={`fixed ${sidebarOpenClose} inset-0 transform transition-all duration-500 z-1002 bg-black opacity-70 w-full h-screen`}
+      >
+        {/* Navlinks */}
+        <div
+          className={`text-white fixed ${sidebarOpenClose} justify-center flex flex-col h-full transform transition-all duration-500 delay-300 w-[80%] sm:w-[60%] bg-purple-700 space-y-6 z-1050`}
+        >
+          {NavLinks.map((link, index) => {
+            return (
+              <Link key={index} href={link.href}>
+                <p className="text-white w-fit text-[20px] ml-12 border-b-2 pb-1 border-white sm:text-[30px]">
+                  {link.name}
+                </p>
+              </Link>
+            );
+          })}
+          {/* Close Icon */}
+          <X
+            onClick={closeNav}
+            className="absolute top-4 right-[1.4rem] w-8 h-8"
+          />
+        </div>
+      </div>
     </div>
   );
 };

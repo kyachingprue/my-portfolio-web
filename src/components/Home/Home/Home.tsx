@@ -1,10 +1,11 @@
-import Navbar from '@/components/Navbar/Navbar';
+"use client";
 import React from 'react';
+import Hero from '../Hero/Hero';
 
 const Home = () => {
   return (
-    <div className='overflow-hidden h-210'>
-      <Navbar/>
+    <div className='overflow-hidden'>
+     <Hero/>
     </div>
   );
 };
