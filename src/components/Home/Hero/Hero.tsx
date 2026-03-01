@@ -6,7 +6,7 @@ import { TypeAnimation } from 'react-type-animation';
 
 const Hero = () => {
   return (
-    <div className="relative min-h-screen flex items-center bg-[radial-gradient(circle_476px_at_54.8%_51.5%,rgba(168,229,253,1)_0%,rgba(244,244,254,1)_42.3%,rgba(244,244,254,1)_100.2%)] dark:bg-[radial-gradient(circle_at_top_left,rgba(113,42,92,1)_0%,rgba(40,25,46,1)_90%)]">
+    <div className="relative min-h-screen flex items-center bg-[radial-gradient(circle_476px_at_54.8%_51.5%,rgba(168,229,253,1)_0%,rgba(244,244,254,1)_42.3%,rgba(244,244,254,1)_100.2%)] dark:bg-[radial-gradient(circle_at_top_left,rgba(113,42,92,1)_0%,rgba(40,25,46,1)_90%)] pt-16 md:pt-0">
       {/* content */}
       <div className="relative z-10 mx-auto text-center">
         {/* sub title */}
@@ -17,7 +17,7 @@ const Hero = () => {
           </span>
         </div>
         {/* title */}
-        <h1 className="text-4xl sm:text-5xl font-bold mb-6">
+        <h1 className="text-3xl sm:text-5xl font-bold px-3 mb-6">
           Hi, I&lsquo;m{' '}
           <span className="text-purple-800 dark:text-yellow-300">
             Kyachingprue Marma
@@ -43,7 +43,7 @@ const Hero = () => {
           />
         </div>
         {/* Description */}
-        <p className="text-lg text-muted-foreground dark:text-gray-300 max-w-2xl mx-auto mb-10">
+        <p className="text-lg text-muted-foreground dark:text-gray-300 max-w-2xl mx-auto mb-10 px-2 md:px-0">
           I am currently deepening my knowledge in Data Structures & Algorithms,
           System Design, and Machine Learning. My long-term goal is to become a
           Computer Scientist and build intelligent, large-scale systems.
