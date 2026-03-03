@@ -10,21 +10,29 @@ const Hero = () => {
       {/* content */}
       <div className="relative z-10 mx-auto text-center">
         {/* sub title */}
-        <div className="sm:mb-6">
+        <div data-aos="fade-up" className="sm:mb-6">
           <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white dark:bg-gray-600 text-sm text-muted-foreground dark:text-gray-200 mb-8">
             <span className="w-2 h-2 rounded-full bg-green-500"></span>
             Available for opportunities
           </span>
         </div>
         {/* title */}
-        <h1 className="text-3xl sm:text-5xl font-bold px-3 mb-6">
+        <h1
+          data-aos="fade-up"
+          data-aos-delay="100"
+          className="text-3xl sm:text-5xl font-bold px-3 mb-6"
+        >
           Hi, I&lsquo;m{' '}
           <span className="text-purple-800 dark:text-yellow-300">
             Kyachingprue Marma
           </span>
         </h1>
         {/* Typewrite effects */}
-        <div className="text-xl sm:text-2xl md:text-3xl text-black dark:text-white font-semibold mb-4 sm:mb-8 h-12">
+        <div
+          data-aos="fade-up"
+          data-aos-delay="200"
+          className="text-xl sm:text-2xl md:text-3xl text-black dark:text-white font-semibold mb-4 sm:mb-8 h-12"
+        >
           <TypeAnimation
             sequence={[
               "I'm Full Stack Developer",
@@ -43,25 +51,29 @@ const Hero = () => {
           />
         </div>
         {/* Description */}
-        <p className="text-lg text-muted-foreground dark:text-gray-300 max-w-2xl mx-auto mb-10 px-2 md:px-0">
+        <p
+          data-aos="fade-up"
+          data-aos-delay="300"
+          className="text-lg text-muted-foreground dark:text-gray-300 max-w-2xl mx-auto mb-10 px-2 md:px-0"
+        >
           I am currently deepening my knowledge in Data Structures & Algorithms,
           System Design, and Machine Learning. My long-term goal is to become a
           Computer Scientist and build intelligent, large-scale systems.
         </p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button
-            size={'lg'}
-            asChild
-            className="w-fit mx-auto sm:mx-0"
-          >
+        <div
+          data-aos="fade-up"
+          data-aos-delay="400"
+          className="flex flex-col sm:flex-row gap-4 justify-center"
+        >
+          <Button size={'lg'} asChild className="w-fit mx-auto sm:mx-0">
             <Link href="#_">
-              <FolderOpen className='w-5 h-5 mr-2' />
+              <FolderOpen className="w-5 h-5 mr-2" />
               View Projects
             </Link>
           </Button>
-          <Button size={"lg"} asChild className='w-fit mx-auto sm:mx-0'>
+          <Button size={'lg'} asChild className="w-fit mx-auto sm:mx-0">
             <Link href="#_">
-              <Download className='w-5 h-5 mr-2' />
+              <Download className="w-5 h-5 mr-2" />
               Download CV
             </Link>
           </Button>

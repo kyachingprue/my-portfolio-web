@@ -14,7 +14,12 @@ const About = () => {
       />
       <div className="grid w-[80%] mx-auto lg:grid-cols-2 gap-12 items-center">
         {/* Image */}
-        <div className="relative">
+        <div
+          data-aos="fade-right"
+          data-aos-delay="0"
+          data-aos-anchor-placement="top-center"
+          className="relative"
+        >
           <div className="aspect-square rounded-2xl overflow-hidden p-2">
             <Image
               src="https://i.ibb.co/gb0nk9pW/man-standing-against-wall-black-jacket-white-shirt-1213951-53648.avif"
@@ -26,7 +31,12 @@ const About = () => {
           </div>
         </div>
         {/* Content */}
-        <div className="space-y-6">
+        <div
+          data-aos="fade-left"
+          data-aos-delay="0"
+          data-aos-anchor-placement="top-center"
+          className="space-y-6"
+        >
           <h3 className="text-2xl font-semibold">
             A passionate developer who love to create
           </h3>
@@ -60,7 +70,10 @@ const About = () => {
         </div>
       </div>
       {/* Stats */}
-      <div className="mt-16 w-[80%] mx-auto">
+      <div
+        data-aos="zoom-in"
+        className="mt-16 w-[80%] mx-auto"
+      >
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
           {stats.map(stat => {
             return (
