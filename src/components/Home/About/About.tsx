@@ -5,7 +5,7 @@ import { highlights, stats } from '../../../../data';
 
 const About = () => {
   return (
-    <div className="py-16 bg-gray-100 dark:bg-gray-900">
+    <section id="about" className="py-16 bg-gray-100 dark:bg-gray-900">
       {/* Section Heading */}
       <SectionHeading
         title_1="About"
@@ -70,29 +70,23 @@ const About = () => {
         </div>
       </div>
       {/* Stats */}
-      <div
-        data-aos="zoom-in"
-        className="mt-16 w-[80%] mx-auto"
-      >
+      <div data-aos="zoom-in" className="mt-16 w-[80%] mx-auto">
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
-          {stats.map(stat => {
-            return (
-              <div
-                key={stat.label}
-                className="bg-white dark:bg-gray-800 shadow rounded-xl p-6 text-center"
-              >
-                <div className="text-3xl md:text-4xl font-bold text-purple-600 mb-2">
-                  {stat.value}
-                </div>
-                <div className="text-sm text-muted-foreground">
-                  {stat.label}
-                </div>
+          {stats.map(stat => (
+            <div
+              key={stat.label}
+              className="bg-white dark:bg-gray-800 shadow-md dark:shadow-gray-800 rounded-xl p-6 text-center transform transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-xl hover:bg-indigo-50 dark:hover:bg-gray-700">
+              <div className="text-3xl md:text-4xl font-bold text-purple-600 mb-2 transition-transform duration-300 hover:scale-110">
+                {stat.value}
               </div>
-            );
-          })}
+              <div className="text-sm text-gray-600 dark:text-gray-400">
+                {stat.label}
+              </div>
+            </div>
+          ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

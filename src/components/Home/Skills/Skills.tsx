@@ -5,7 +5,7 @@ import SkillCard from './SkillCard';
 
 const Skills = () => {
   return (
-    <div className='py-16 bg-gray-100 dark:bg-gray-950'>
+    <section id="skills" className='py-16 bg-gray-100 dark:bg-gray-950'>
       <SectionHeading
         title_1='Technical'
         title_2='Skills'
@@ -37,7 +37,7 @@ const Skills = () => {
           );
         })}
       </div>
-    </div>
+    </section>
   );
 };
 

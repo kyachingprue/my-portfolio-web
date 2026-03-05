@@ -5,7 +5,7 @@ import ProjectCard from './ProjectCard';
 
 const Project = () => {
   return (
-    <div className='py-16 bg-gray-100 dark:bg-gray-900'>
+    <section id="projects" className='py-16 bg-gray-100 dark:bg-gray-900'>
       <SectionHeading
         title_1='Featured'
         title_2='Projects'
@@ -16,7 +16,7 @@ const Project = () => {
           return (
             <div
               data-aos="fade-up"
-              data-aos-delay={index * 100}
+              data-aos-delay={index * 50}
               data-aos-anchor-placement="top-center"
               key={index}
             >
@@ -25,7 +25,7 @@ const Project = () => {
           );
         })}
       </div>
-    </div>
+    </section>
   );
 };
 

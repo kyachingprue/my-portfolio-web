@@ -25,7 +25,10 @@ const ClientReview = () => {
     },
   };
   return (
-    <div className="py-20 bg-gray-200 dark:bg-gray-900">
+    <section
+      id="testimonials"
+      className="py-20 bg-gray-200 dark:bg-gray-900"
+    >
       <div className="w-[80%] mx-auto">
         <SectionHeading
           title_1="Our Client"
@@ -40,7 +43,7 @@ const ClientReview = () => {
             autoPlaySpeed={3000}
             arrows={true}
           >
-            {userReviewData.map((user) => {
+            {userReviewData.map(user => {
               return (
                 <div key={user.id}>
                   <ReviewCard user={user} />
@@ -50,7 +53,7 @@ const ClientReview = () => {
           </Carousel>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

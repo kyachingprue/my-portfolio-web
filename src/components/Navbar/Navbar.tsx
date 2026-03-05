@@ -21,6 +21,19 @@ const Navbar = ({ openNav }: Props) => {
     return () => window.removeEventListener('scroll', handler);
   }, []);
 
+
+  const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
+    e.preventDefault();
+
+    const element = document.querySelector(id);
+    if (element) {
+      element.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    }
+  };
+
   return (
     <div
       className={`fixed w-full h-[12vh] z-50 transition-all duration-200 ${
@@ -30,11 +43,12 @@ const Navbar = ({ openNav }: Props) => {
       <div className="flex items-center h-full justify-between w-[90%] mx-auto">
         <Logo />
 
-        <div className="hidden lg:flex items-center space-x-8">
+        <div className="hidden lg:flex items-center lg:space-x-8">
           {NavLinks.map((link, index) => (
             <Link
               key={index}
               href={link.href}
+              onClick={e => handleScroll(e, link.href)}
               className="dark:text-white text-black hover:text-yellow-500 dark:hover:text-yellow-200 font-semibold transition-all duration-200"
             >
               {link.name}
