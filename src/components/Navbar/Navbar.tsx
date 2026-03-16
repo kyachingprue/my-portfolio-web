@@ -59,7 +59,7 @@ const Navbar = ({ openNav }: Props) => {
         <div className="flex items-center space-x-4">
           <Link
             className="relative inline-flex items-center justify-center px-6 sm:px-8 py-3 font-bold text-white bg-indigo-600 rounded-md transition-all duration-300 ring-1 ring-indigo-300 hover:ring-offset-2"
-            href="#"
+            href="/public/kyachingprueCV.pdf" download
           >
             <span className="flex items-center space-x-2 text-sm">
               <Download className="w-4 h-4" />
