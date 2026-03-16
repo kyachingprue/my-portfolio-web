@@ -57,15 +57,15 @@ const Navbar = ({ openNav }: Props) => {
         </div>
 
         <div className="flex items-center space-x-4">
-          <Link
+          <a
             className="relative inline-flex items-center justify-center px-6 sm:px-8 py-3 font-bold text-white bg-indigo-600 rounded-md transition-all duration-300 ring-1 ring-indigo-300 hover:ring-offset-2"
-            href="/public/kyachingprueCV.pdf" download
+            href="/kyachingprueCV.pdf" download
           >
             <span className="flex items-center space-x-2 text-sm">
               <Download className="w-4 h-4" />
-              <span>Download CV</span>
+              <span> Download CV </span>
             </span>
-          </Link>
+          </a>
 
           <ThemeToggler />
 
