@@ -1,6 +1,5 @@
 "use client";
 import React, { useEffect, useState } from 'react';
-import { Button } from '../ui/button';
 import { ArrowUp } from 'lucide-react';
 
 const ScrollToTop = () => {
@@ -23,12 +22,12 @@ const ScrollToTop = () => {
   return (
     <div className="fixed bottom-4 animate-pulse right-4">
       {isVisible && (
-        <Button
-          className="bg-blue-700 cursor-pointer text-white rounded-full w-12 h-12 flex items-center justify-center focus:outline-none"
+        <button
+          className="bg-blue-700 cursor-pointer text-white rounded-full w-10 h-10 flex items-center justify-center focus:outline-none"
           onClick={scrollToTop}
         >
           <ArrowUp />
-        </Button>
+        </button>
       )}
     </div>
   );

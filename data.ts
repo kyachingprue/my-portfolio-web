@@ -16,7 +16,8 @@ import {
   Phone,
   Server,
   Smartphone,
-  Terminal
+  Terminal,
+  UserRoundKey 
 } from "lucide-react";
 
 import { FaGithub, FaLinkedin, FaLinkedinIn, FaTwitter } from "react-icons/fa6";
@@ -222,6 +223,91 @@ export const projects = [
     image: 'https://i.ibb.co/VcMQ6m8q/upwork-freelance-marketplace.jpg',
     techStack: ['React', 'Node.js', 'Express.js', 'MongoDB', 'JWT'],
     demoUrl: 'http://example.com',
+    clientGithubUrl: 'http://example.com',
+    serverGithubUrl: 'http://example.com',
+  },
+  {
+    title: 'School Management System',
+    description:
+      'A complete school management web app for managing students, teachers, classes, attendance, and results with admin and teacher control panels.',
+    image: 'https://i.ibb.co/BVwF4sWn/Sweedu-feature-08-oct-2020.jpg',
+    techStack: ['Next.js', 'TypeScript', 'MongoDB', 'Firebase'],
+    demoUrl: 'http://example.com',
+    clientGithubUrl: 'http://example.com',
+    serverGithubUrl: 'http://example.com',
+  },
+  {
+    title: 'Hotel Booking Application',
+    description:
+      'An online hotel booking system with real-time room availability, user authentication, payment gateway integration, and booking history management.',
+    image: 'https://i.ibb.co/7J4N0Y4X/Paradise-Cove.jpg',
+    techStack: ['React', 'Stripe', 'Node.js', 'MongoDB'],
+    demoUrl: 'http://example.com',
+    clientGithubUrl: 'http://example.com',
+    serverGithubUrl: 'http://example.com',
+  },
+  {
+    title: 'Job Portal Website',
+    description:
+      'A modern job portal platform where employers can post jobs and applicants can apply, upload resumes, and track application status.',
+    image: 'https://i.ibb.co/Y7r1W6KG/jobfinder-1.jpg',
+    techStack: ['Next.js', 'Tailwind CSS', 'Express.js', 'MongoDB'],
+    demoUrl: 'http://example.com',
+    clientGithubUrl: 'http://example.com',
+    serverGithubUrl: 'http://example.com',
+  },
+  {
+    title: 'Task Management Dashboard',
+    description:
+      'A productivity-focused task management app with drag-and-drop Kanban boards, user roles, real-time updates, and deadline tracking.',
+    image:
+      'https://i.ibb.co/spJrwcHS/Task-Management-Dashboard-With-Project-Timeline.jpg',
+    techStack: ['React', 'Redux', 'Node.js', 'Socket.io'],
+    demoUrl: 'http://example.com',
+    clientGithubUrl: 'http://example.com',
+    serverGithubUrl: 'http://example.com',
+  },
+  {
+    title: 'Online Learning Platform',
+    description:
+      'An e-learning platform with course enrollment, video streaming, instructor dashboards, and secure payment integration.',
+    image:
+      'https://i.ibb.co/ZRgTYxt6/title-futuristic-online-learning-platform-with-neon-lights-606187-17854.avif',
+    techStack: ['Next.js', 'Stripe', 'Express.js', 'MongoDB'],
+    demoUrl: 'http://example.com',
+    clientGithubUrl: 'http://example.com',
+    serverGithubUrl: 'http://example.com',
+  },
+  {
+    title: 'Inventory Management System',
+    description:
+      'A business inventory tracking system with product management, stock alerts, sales reports, and analytics dashboard.',
+    image: 'https://i.ibb.co/0jpMkNmP/thmb-1180-inventory-management.avif',
+    techStack: ['React', 'Node.js', 'MongoDB', 'Chart.js'],
+    demoUrl: 'http://example.com',
+    clientGithubUrl: 'http://example.com',
+    serverGithubUrl: 'http://example.com',
+  },
+  {
+    title: 'Portfolio Builder Application',
+    description:
+      'A dynamic portfolio builder app where users can create, customize, and publish personal portfolio websites with theme support.',
+    image: 'https://i.ibb.co/fzwnhWny/af5eac91b5cbe6ae13a8eff67c498079.jpg',
+    techStack: ['Next.js', 'TypeScript', 'Firebase', 'Tailwind CSS'],
+    demoUrl: 'http://example.com',
+    clientGithubUrl: 'http://example.com',
+    serverGithubUrl: 'http://example.com',
+  },
+];
+
+export const nextProjects = [
+  {
+    title: 'Freelance Marketplace Platform',
+    description:
+      'A full-stack freelance marketplace where clients can post jobs, hire freelancers, manage payments, and track project progress with secure authentication and role-based dashboards.',
+    image: 'https://i.ibb.co/VcMQ6m8q/upwork-freelance-marketplace.jpg',
+    techStack: ['React', 'Node.js', 'Express.js', 'MongoDB', 'JWT'],
+    demoUrl: 'http://example.com',
     githubUrl: 'http://example.com',
   },
   {
@@ -239,71 +325,6 @@ export const projects = [
       'An online hotel booking system with real-time room availability, user authentication, payment gateway integration, and booking history management.',
     image: 'https://i.ibb.co/7J4N0Y4X/Paradise-Cove.jpg',
     techStack: ['React', 'Stripe', 'Node.js', 'MongoDB'],
-    demoUrl: 'http://example.com',
-    githubUrl: 'http://example.com',
-  },
-  {
-    title: 'Job Portal Website',
-    description:
-      'A modern job portal platform where employers can post jobs and applicants can apply, upload resumes, and track application status.',
-    image: 'https://i.ibb.co/Y7r1W6KG/jobfinder-1.jpg',
-    techStack: ['Next.js', 'Tailwind CSS', 'Express.js', 'MongoDB'],
-    demoUrl: 'http://example.com',
-    githubUrl: 'http://example.com',
-  },
-  {
-    title: 'Task Management Dashboard',
-    description:
-      'A productivity-focused task management app with drag-and-drop Kanban boards, user roles, real-time updates, and deadline tracking.',
-    image:
-      'https://i.ibb.co/spJrwcHS/Task-Management-Dashboard-With-Project-Timeline.jpg',
-    techStack: ['React', 'Redux', 'Node.js', 'Socket.io'],
-    demoUrl: 'http://example.com',
-    githubUrl: 'http://example.com',
-  },
-  {
-    title: 'Real Estate Listing Platform',
-    description:
-      'A property listing platform where users can browse, filter, and contact agents with advanced search functionality and interactive maps.',
-    image: 'https://i.ibb.co/7Pdvzcg/8aa8a57bc886360b1e8dd3bbee4b6614.jpg',
-    techStack: ['Next.js', 'TypeScript', 'MongoDB', 'Google Maps API'],
-    demoUrl: 'http://example.com',
-    githubUrl: 'http://example.com',
-  },
-  {
-    title: 'Social Media Web App',
-    description:
-      'A full-stack social networking platform with posts, comments, likes, user profiles, and real-time notifications.',
-    image:'https://i.ibb.co/WWXdnYQ2/original-e1be7df7f8cefe04700d02a3a96b53f0.jpg',
-    techStack: ['React', 'Node.js', 'MongoDB', 'JWT', 'Cloudinary'],
-    demoUrl: 'http://example.com',
-    githubUrl: 'http://example.com',
-  },
-  {
-    title: 'Online Learning Platform',
-    description:
-      'An e-learning platform with course enrollment, video streaming, instructor dashboards, and secure payment integration.',
-    image:
-      'https://i.ibb.co/ZRgTYxt6/title-futuristic-online-learning-platform-with-neon-lights-606187-17854.avif',
-    techStack: ['Next.js', 'Stripe', 'Express.js', 'MongoDB'],
-    demoUrl: 'http://example.com',
-    githubUrl: 'http://example.com',
-  },
-  {
-    title: 'Inventory Management System',
-    description:
-      'A business inventory tracking system with product management, stock alerts, sales reports, and analytics dashboard.',
-    image: 'https://i.ibb.co/0jpMkNmP/thmb-1180-inventory-management.avif',
-    techStack: ['React', 'Node.js', 'MongoDB', 'Chart.js'],
-    demoUrl: 'http://example.com',
-    githubUrl: 'http://example.com',
-  },
-  {
-    title: 'Portfolio Builder Application',
-    description:
-      'A dynamic portfolio builder app where users can create, customize, and publish personal portfolio websites with theme support.',
-    image: 'https://i.ibb.co/fzwnhWny/af5eac91b5cbe6ae13a8eff67c498079.jpg',
-    techStack: ['Next.js', 'TypeScript', 'Firebase', 'Tailwind CSS'],
     demoUrl: 'http://example.com',
     githubUrl: 'http://example.com',
   },
@@ -328,7 +349,7 @@ export const skillCategories = [
       { name: "Express", icon: Layers},
       { name: "MongoDB", icon: Database },
       { name: "PostgreSQL", icon: Database},
-      { name: "GraphQL", icon: Cpu},
+      { name: "CRUD Operations", icon: Cpu},
       { name: "REST APIs", icon: Cloud},
     ]
   },
@@ -336,9 +357,9 @@ export const skillCategories = [
     title: "Tools & Others",
     skills: [
       {name: "Git", icon: GitBranch},
-      {name: "Docker", icon: Server},
-      {name: "AWS", icon: Cloud},
-      {name: "Linux", icon: Terminal},
+      {name: "GitHub", icon: Server},
+      {name: "Vercel", icon: Cloud},
+      {name: "Firebase", icon: UserRoundKey},
       {name: "Figma", icon: Palette},
       {name: "CI/CD", icon: Cpu},
     ]

@@ -1,5 +1,4 @@
 import SectionHeading from '@/components/Helper/SectionHeading';
-import React from 'react';
 import { skillCategories } from '../../../../data';
 import SkillCard from './SkillCard';
 

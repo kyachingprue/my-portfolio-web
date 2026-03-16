@@ -11,18 +11,16 @@ type Props = {
   image: string;
   techStack: string[];
   demoUrl?: string;
-  clientGithubUrl?: string;
-  serverGithubUrl?: string;
+  githubUrl?: string;
 }
 
-const ProjectCard = ({
+const NextProjectCard = ({
   description,
   title,
   image,
   techStack,
   demoUrl,
-  clientGithubUrl,
-  serverGithubUrl,
+  githubUrl
 }: Props) => {
   return (
     <div className="group relative bg-white dark:bg-gray-800 shadow-md rounded-2xl overflow-hidden hover:shadow-2xl duration-300">
@@ -62,32 +60,20 @@ const ProjectCard = ({
           {demoUrl && (
             <Button asChild size={'sm'} className="flex-1">
               <Link href={demoUrl} target="_blank" rel="noopener noreferrer">
-                <ExternalLink className="w-4 h-4" />
-                Live
+                <ExternalLink className="w-4 h-4 mr-2" />
+                Live Demo
               </Link>
             </Button>
           )}
-          {clientGithubUrl && (
+          {githubUrl && (
             <Button asChild variant={'outline'} size={'sm'} className="flex-1">
               <Link
-                href={clientGithubUrl}
+                href={githubUrl}
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FaGithub className="w-4 h-4" />
-                Client
-              </Link>
-            </Button>
-          )}
-          {serverGithubUrl && (
-            <Button asChild variant={'outline'} size={'sm'} className="flex-1">
-              <Link
-                href={serverGithubUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaGithub className="w-4 h-4" />
-                Server
+                <FaGithub className="w-4 h-4 mr-2" />
+                GitHub Link
               </Link>
             </Button>
           )}
@@ -97,4 +83,4 @@ const ProjectCard = ({
   );
 };
 
-export default ProjectCard;
+export default NextProjectCard;
