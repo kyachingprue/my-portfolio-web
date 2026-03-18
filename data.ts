@@ -23,14 +23,14 @@ import {
 import { FaGithub, FaLinkedin, FaLinkedinIn, FaTwitter } from "react-icons/fa6";
 
 export const stats = [
-  { label: "Years Experience", value: "5+" },
+  { label: "Learning Experience", value: "2+" },
   { label: "Projects Completed", value: "50+" },
   { label: "Happy Clients", value: "30+" },
-  { label: "Students Taught", value: "1000+" },
+  { label: "Students Taught", value: "100+" },
 ];
 
 export const highlights = [
-  { icon: MapPin, text: "Based in San Francisco, CA" },
+  { icon: MapPin, text: "Based in khagrachari, Bangladesh" },
   { icon: Briefcase, text: "Open for freelancer work" },
   { icon: GraduationCap, text: "CS Graduate from Stanford" },
   { icon: Coffee, text: "Powered by coffee & curiosity" },
@@ -127,19 +127,19 @@ export const contactInfo = [
   {
     icon: Mail,
     label: "Email",
-    value: "hello@john.dev",
-    href: "mailto:hello@john.dev"
+    value: "kyachingpruemarma.info@gmail.com",
+    href: "kyachingpruemarma.info@gmail.com"
   },
   {
     icon: Phone,
     label: "Phone",
-    value: "+1 (555) 123-457464",
+    value: "01581242628",
     href: "tel:+132838333"
   },
   {
     icon: MapPin,
     label: "Location",
-    value: "San Francisco, CA",
+    value: "Khagrachari, Bangladesh",
     href: "#"
   },
 ];
@@ -266,38 +266,7 @@ export const projects = [
     demoUrl: 'http://example.com',
     clientGithubUrl: 'http://example.com',
     serverGithubUrl: 'http://example.com',
-  },
-  {
-    title: 'Online Learning Platform',
-    description:
-      'An e-learning platform with course enrollment, video streaming, instructor dashboards, and secure payment integration.',
-    image:
-      'https://i.ibb.co/ZRgTYxt6/title-futuristic-online-learning-platform-with-neon-lights-606187-17854.avif',
-    techStack: ['Next.js', 'Stripe', 'Express.js', 'MongoDB'],
-    demoUrl: 'http://example.com',
-    clientGithubUrl: 'http://example.com',
-    serverGithubUrl: 'http://example.com',
-  },
-  {
-    title: 'Inventory Management System',
-    description:
-      'A business inventory tracking system with product management, stock alerts, sales reports, and analytics dashboard.',
-    image: 'https://i.ibb.co/0jpMkNmP/thmb-1180-inventory-management.avif',
-    techStack: ['React', 'Node.js', 'MongoDB', 'Chart.js'],
-    demoUrl: 'http://example.com',
-    clientGithubUrl: 'http://example.com',
-    serverGithubUrl: 'http://example.com',
-  },
-  {
-    title: 'Portfolio Builder Application',
-    description:
-      'A dynamic portfolio builder app where users can create, customize, and publish personal portfolio websites with theme support.',
-    image: 'https://i.ibb.co/fzwnhWny/af5eac91b5cbe6ae13a8eff67c498079.jpg',
-    techStack: ['Next.js', 'TypeScript', 'Firebase', 'Tailwind CSS'],
-    demoUrl: 'http://example.com',
-    clientGithubUrl: 'http://example.com',
-    serverGithubUrl: 'http://example.com',
-  },
+  }
 ];
 
 export const nextProjects = [
@@ -316,15 +285,6 @@ export const nextProjects = [
       'A complete school management web app for managing students, teachers, classes, attendance, and results with admin and teacher control panels.',
     image: 'https://i.ibb.co/BVwF4sWn/Sweedu-feature-08-oct-2020.jpg',
     techStack: ['Next.js', 'TypeScript', 'MongoDB', 'Firebase'],
-    demoUrl: 'http://example.com',
-    githubUrl: 'http://example.com',
-  },
-  {
-    title: 'Hotel Booking Application',
-    description:
-      'An online hotel booking system with real-time room availability, user authentication, payment gateway integration, and booking history management.',
-    image: 'https://i.ibb.co/7J4N0Y4X/Paradise-Cove.jpg',
-    techStack: ['React', 'Stripe', 'Node.js', 'MongoDB'],
     demoUrl: 'http://example.com',
     githubUrl: 'http://example.com',
   },

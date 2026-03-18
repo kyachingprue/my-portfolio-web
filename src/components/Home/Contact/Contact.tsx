@@ -82,28 +82,40 @@ const Contact = () => {
               <div className="grid sm:grid-cols-2 gap-4">
                 <div className="space-y-2">
                   <label htmlFor="name" className="text-sm font-medium">
-                    Name
+                    First Name
                   </label>
                   <Input
                     id="name"
                     name="name"
-                    placeholder="Kyaching Prue Marma"
+                    placeholder="Kyaching Prue "
                     required
                     className="bg-gray-100"
                   />
                 </div>
                 <div className="space-y-2">
                   <label htmlFor="email" className="text-sm font-medium">
-                    Email
+                    Last Name
                   </label>
                   <Input
-                    id="email"
-                    name="email"
-                    placeholder="kyachingpruemarma.info@gmail.com"
+                    id="name"
+                    name="name"
+                    placeholder="Marma"
                     required
                     className="bg-gray-100"
                   />
                 </div>
+              </div>
+              <div className="space-y-2">
+                <label htmlFor="email" className="text-sm font-medium">
+                  Email
+                </label>
+                <Input
+                  id="email"
+                  name="email"
+                  placeholder="kyachingpruemarma.info@gmail.com"
+                  required
+                  className="bg-gray-100"
+                />
               </div>
               <div className="space-y-2">
                 <label htmlFor="subject" className="text-sm font-medium">

@@ -2,6 +2,7 @@ import SectionHeading from '@/components/Helper/SectionHeading';
 import Image from 'next/image';
 import React from 'react';
 import { highlights, stats } from '../../../../data';
+import image from '../../../../public/profile-image.jpg'
 
 const About = () => {
   return (
@@ -22,7 +23,7 @@ const About = () => {
         >
           <div className="aspect-square rounded-2xl overflow-hidden p-2">
             <Image
-              src="https://i.ibb.co/gb0nk9pW/man-standing-against-wall-black-jacket-white-shirt-1213951-53648.avif"
+              src={image}
               alt="Profile image"
               width={600}
               height={700}
@@ -41,15 +42,12 @@ const About = () => {
             A passionate developer who love to create
           </h3>
           <p className="text-muted-foreground leading-relaxed">
-            I am currently deepening my knowledge in Data Structures &
-            Algorithms, System Design, and Machine Learning. My long-term goal
-            is to become a Computer Scientist and build intelligent, large-scale
-            systems.
-          </p>
-          <p className="text-muted-foreground leading-relaxed">
-            I enjoy solving complex problems and building scalable web
-            applications using modern technologies like React, Node.js, and
-            MongoDB.
+            I am passionate about solving complex problems and building
+            scalable, high-performance web applications using modern
+            technologies such as React, Node.js, and MongoDB. Currently, I am
+            deepening my expertise in Data Structures & Algorithms, System
+            Design, and Machine Learning, with the long-term goal of becoming a
+            Computer Scientist and designing intelligent, large-scale systems.
           </p>
           {/* Highlights */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
@@ -75,7 +73,8 @@ const About = () => {
           {stats.map(stat => (
             <div
               key={stat.label}
-              className="bg-white dark:bg-gray-800 shadow-md dark:shadow-gray-800 rounded-xl p-6 text-center transform transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-xl hover:bg-indigo-50 dark:hover:bg-gray-700">
+              className="bg-white dark:bg-gray-800 shadow-md dark:shadow-gray-800 rounded-xl p-6 text-center transform transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-xl hover:bg-indigo-50 dark:hover:bg-gray-700"
+            >
               <div className="text-3xl md:text-4xl font-bold text-purple-600 mb-2 transition-transform duration-300 hover:scale-110">
                 {stat.value}
               </div>
